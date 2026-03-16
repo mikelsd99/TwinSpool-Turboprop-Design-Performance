@@ -1,7 +1,7 @@
 # Jet Engine Design and Performance Analysis
 
-This repository contains the work developed for the **Jet Engine Design** project of the Master's Degree in Aeronautical Engineering.  
-The objective of this project is to analyze and model the thermodynamic performance of a jet engine both at the **design point** and **off-design operating conditions**.
+This repository contains the work developed for the **Twin-spool Turboprop Engine Design** project of the Master's Degree in Aeronautical Engineering.  
+The objective of this project is to analyze and model the thermodynamic performance of a twin-spool turboprop engine both at the **design point** and **off-design operating conditions**.
 
 The project is divided into two main parts:
 
@@ -22,7 +22,7 @@ Authors:
 
 # 1. Design Point Analysis
 
-The first part of the project focuses on the **thermodynamic design of the jet engine at the design operating point**.
+The first part of the project focuses on the **thermodynamic design of the turboprop engine at the design operating point**.
 
 ## Objectives
 
