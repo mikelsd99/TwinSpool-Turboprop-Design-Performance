@@ -1,73 +1,124 @@
-# Twin-Spool Turboprop Engine: Design & Performance Analysis
+# Jet Engine Design and Performance Analysis
 
-This repository contains a comprehensive thermodynamic and performance study of a twin-spool turboprop engine. The project is divided into two major analytical phases: **Design Point Selection** and **Off-Design Operational Mapping**.
+This repository contains the work developed for the **Jet Engine Design** project of the Master's Degree in Aeronautical Engineering.  
+The objective of this project is to analyze and model the thermodynamic performance of a jet engine both at the **design point** and **off-design operating conditions**.
 
-The study uses technology levels consistent with 2005 standards and focuses on optimizing specific thrust and fuel efficiency for military transport applications.
+The project is divided into two main parts:
 
----
+1. **Design Point Analysis**
+2. **Off-Design Performance Analysis**
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Part 1: Design Point Operation](#part-1-design-point-operation)
-- [Part 2: Off-Design Operation](#part-2-off-design-operation)
-- [Key Engineering Skills Demonstrated](#key-engineering-skills-demonstrated)
-- [Authors](#authors)
-
----
-
-## Project Overview
-The goal of this project was to design a robust propulsion system for a **CASA CN-235** class aircraft. We modeled a twin-spool architecture where a High-Pressure Turbine (HPT) drives the High-Pressure Compressor (HPC), and a Low-Pressure Turbine (LPT) drives both the Low-Pressure Compressor (LPC) and the propeller via a gearbox.
-
-### Technical Constraints:
-- **Flight Conditions:** Mach 0.65 at 35,000 ft (ISA).
-- **Architecture:** Twin-spool axial compressors and turbines, convergent propulsive nozzle.
+Authors:
+- Mikel Segovia Díaz
+- Luis Fernando Valladares Sifuentes
+- Alberto Yufera Daza
 
 ---
 
-## 🛠 Part 1: Design Point Operation
-In this phase, we implemented a thermodynamic cycle model to identify the optimal "Design Point" based on sensitivity analyses of compression ratios and heating degrees.
+# Repository Structure
 
-### Selected Design Parameters:
-| Parameter | Symbol | Selected Value |
-| :--- | :--- | :--- |
-| Heating Degree | $\theta$ | 5.827 |
-| Enthalpy Drop Fraction | $\alpha$ | 0.85 |
-| Total Pressure Ratio | $\pi_c$ | 14 |
-
-### Design Results:
-- **Specific Thrust ($E_e$):** 1126.05 Ns/kg
-- **TSFC:** 45.12 (kg/h)/kN
-- **Cycle Efficiency:** Optimized for a balance between high power output and fuel economy.
 
 ---
 
-## Part 2: Off-Design Operation
-Once the design point was frozen, the engine was "sized" to meet the real-world thrust requirements of the **CASA CN-235**. We then simulated the engine's behavior across its entire flight envelope using scaled compressor and turbine maps.
+# 1. Design Point Analysis
 
-### Engine Sizing Results:
-- **Required Design Thrust:** 6,553 N per engine.
-- **Air Mass Flow ($\dot{m}_a$):** 5.8536 kg/s.
-- **Nozzle Exit Area ($A_8$):** 0.1495 m².
+The first part of the project focuses on the **thermodynamic design of the jet engine at the design operating point**.
 
-### Critical Validations:
-- **Surge Margins:** All operational points were verified to maintain at least a **20% surge margin** for safety.
-- **Take-off Capability:** The engine provides **23% surplus thrust** at sea level compared to the design requirement, ensuring safe take-off performance.
-- **Flight Envelope:** Performance was mapped for various altitudes: Sea Level, 21,000 ft, and 35,000 ft.
+## Objectives
+
+- Define the thermodynamic cycle of the engine
+- Model each engine component
+- Determine the main operating parameters
+- Evaluate engine performance at the design point
+
+## Engine Components Modeled
+
+The following components of the engine are analyzed:
+
+1. Diffuser  
+2. Low-pressure compressor (LPC)  
+3. High-pressure compressor (HPC)  
+4. Combustion chamber  
+5. High-pressure turbine (HPT)  
+6. Low-pressure turbine (LPT)  
+7. Nozzle  
+
+## Methodology
+
+The design point analysis includes:
+
+- Definition of **flight conditions**
+- Assumptions and thermodynamic properties of the working fluid
+- Component-by-component thermodynamic analysis
+- Energy and mass balance calculations
+- Optimization of relevant variables
+
+## Outputs
+
+The main outputs obtained include:
+
+- Temperatures and pressures at each station
+- Mass flow rates
+- Fuel consumption
+- Engine thrust
+- Cycle performance metrics
 
 ---
 
-## Key Engineering Skills Demonstrated
-* **Thermodynamic Cycle Analysis:** Real gas modeling and entropy/enthalpy (h-s) diagrams.
-* **Performance Engineering:** Scaling component maps and calculating off-design equilibrium.
-* **Sizing & Integration:** Matching engine performance to aircraft-specific aerodynamic requirements.
-* **Software Proficiency:** Numerical simulation and data visualization (MATLAB/Python).
+# 2. Off-Design Performance Analysis
+
+The second part of the project analyzes the **engine behavior outside the design operating point**.
+
+This includes studying how the engine performs under different flight conditions and operational regimes.
+
+## Objectives
+
+- Evaluate engine performance away from the design point
+- Scale and apply compressor and turbine maps
+- Analyze performance variation with operating parameters
+
+## Key Topics
+
+The off-design analysis includes:
+
+- Engine sizing parameters
+- Intake minimum area calculation
+- Use of **existing engine maps**
+- Scaling of turbomachinery performance maps
+- Performance evaluation under different operating conditions
+
+## Components Analyzed
+
+Off-design calculations are performed for:
+
+- Inlet control volume
+- Low-pressure compressor
+- High-pressure compressor
+- Combustion chamber
+- High-pressure turbine
+- Low-pressure turbine
+- Nozzle
+
+## Outputs
+
+The analysis provides:
+
+- Off-design operating maps
+- Performance variation with flight speed
+- Fuel consumption trends
+- Engine operating limits
 
 ---
 
-## Authors
-* **Luis Fernando Valladares Sifuentes**
-* **Mikel Segovia Díaz**
-* **Alberto Yúfera Daza**
+# Tools and Methods
+
+The project uses standard **gas turbine thermodynamic analysis techniques**, including:
+
+- Mass and energy conservation
+- Turbomachinery performance maps
+- Scaling methods for compressor and turbine characteristics
+
+Numerical calculations and data analysis were performed using MATLAB.
 
 ---
-*Developed as part of the "Jet Engine Design" curriculum (MIA).*
+
